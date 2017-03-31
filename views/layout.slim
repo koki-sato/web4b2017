@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    meta[charset="UTF-8"]
+    title Web for beginners
+    link[href="/stylesheets/application.css" media="all" rel="stylesheet"]
+  body
+    header.header
+      .header_inner
+        .header_logo
+          h1
+            a[href="/"]
+              img[alt="Web for beginners" src="/images/logo.png"]
+        ul.header_links
+          li.header_link
+            a[href="./admin"] Admin
+          /! <li class="header_link"><a href="./flag">Flag</a></li>
+    main.main
+      .main_inner
+        == yield
+    footer.footer
+      .footer_inner
+        .footer_copyright
+          | © #{Time.now.year} Koki Sato All Rights Reserved.
+    script[src="/javascripts/hide.js"]

@@ -1,0 +1,21 @@
+- if request.post?
+  - if success
+    .alert.alert-success
+      = message
+  - else
+    .alert.alert-danger
+      = message
+.title
+  h1 Find the flags
+.challenges
+  - (1..5).each do |i|
+    - if session[:"flag#{i}"]
+      .challenge.solved
+        h3 Flag #{i}
+    - else
+      .challenge.unsolved
+        h3 Flag #{i}
+.flag_form
+  form[accepted-charset="UTF-8" action="/" method="post"]
+    input[class="flag_form_text" name="flag" placeholder='FLAG' type="text"]
+    input[class="flag_form_button" type="submit" value='submit']

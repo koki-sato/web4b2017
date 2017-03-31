@@ -1,0 +1,14 @@
+flags:
+  flag1: web4b{W3lc0m3_t0_my_s1t3!}
+  flag2: web4b{1s_1t_too_3asy?}
+  flag3: web4b{D0nt_f0rget_rob0ts}
+  flag4: web4b{Read_c@refu11y}
+  flag5: web4b{Wh@t_ar3_u_l00king_for}
+messages:
+  success: Congratulations!
+  wrong: Woops... Your flag is wrong.
+  admin: Only admin can access this page!
+  browser: This page can only be accessed from a specific browser "web4b browser"
+  not_found: The page you are looking for is not found.
+  error: 500 Internal Server Error
+user_agent: web4b browser
