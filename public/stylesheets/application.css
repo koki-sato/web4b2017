@@ -252,16 +252,22 @@ article, aside, footer, header, nav, section {
   border-radius: 3px;
 }
 
-.alert-danger {
-  border-color: #ebccd1;
-  background-color: #f2dede;
-  color: #a94442;
-}
-
 .alert-success {
   border-color: #d6e9c6;
   background-color: #dff0d8;
   color: #3c763d;
+}
+
+.alert-warning {
+  border-color: #faebcc;
+  background-color: #fcf8e3;
+  color: #8a6d3b;
+}
+
+.alert-danger {
+  border-color: #ebccd1;
+  background-color: #f2dede;
+  color: #a94442;
 }
 
 .main {
@@ -288,6 +294,34 @@ article, aside, footer, header, nav, section {
 .title h1 {
   color: #333333;
   font-size: 24px;
+}
+
+.block {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-left: 25px;
+  margin-right: 20px;
+}
+
+.block h2 {
+  font-size: 18px;
+}
+
+.description {
+  margin-top: 25px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  padding: 0.2em 1em;
+  color: #6a737d;
+  border-left: 0.25em solid #dfe2e5;
+  line-height: 24px;
+}
+
+.description p {
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .challenges {
@@ -330,7 +364,7 @@ article, aside, footer, header, nav, section {
   margin-top: 60px;
 }
 
-.flag_form_text {
+.form_text {
   padding: 5px 10px;
   width: 60%;
   height: 45px;
@@ -340,9 +374,9 @@ article, aside, footer, header, nav, section {
   border-color: #cccccc;
 }
 
-.flag_form_button {
+.form_button {
   padding: 6px 24px;
-  margin-bottom: 0;
+  margin-bottom: 0px;
   font-size: 16px;
   font-weight: 600;
   height: 45px;
@@ -353,11 +387,80 @@ article, aside, footer, header, nav, section {
   border-color: #6495ed;
 }
 
-.flag_form_button:hover,
-.flag_form_button:focus {
+.form_button:hover,
+.form_button:focus {
   color: #ffffff;
   background-color: #6495ed;
   text-decoration: none;
+}
+
+.panels {
+  margin-top: 50px;
+  width: 100%;
+  display: inline-block;
+}
+
+.panel {
+  border: 0px;
+  background-color: #888888;
+  width: 40%;
+}
+
+.ok-btn {
+  padding: 6px 36px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  font-weight: 600;
+  height: 45px;
+  border: 3px solid transparent;
+  border-radius: 0px;
+  background-color: #6495ed;
+  border-color: #6495ed;
+  color: #ffffff;
+  display: block;
+}
+
+.alert-game {
+  margin-top: 20px;
+}
+
+.buttons {
+  margin-top: 30px;
+  text-align:center;
+}
+
+.janken-btn {
+  width: 120px;
+  padding: 6px 10px;
+  margin-left: 8px;
+  margin-right: 8px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  height: 45px;
+  border: 2px solid transparent;
+  border-radius: 0px;
+  background-color: #f2f2f2;
+  border-color: #eeeeee;
+  color: #757575;
+}
+
+.janken-btn:hover,
+.janken-btn:focus {
+  color: #ffffff;
+  background-color: #aaaaaa;
+  border-color: #cccccc;
+  text-decoration: none;
+}
+
+.result {
+  list-style-type: disc;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 24px;
 }
 
 .footer {
@@ -381,6 +484,16 @@ article, aside, footer, header, nav, section {
   float: left;
 }
 
+.footer_links {
+  overflow: hidden;
+  float: right;
+}
+
+.footer_link {
+  display: inline-block;
+  margin-right: 12px;
+}
+
 @media (max-width: 540px) {
   .challenges {
     margin-top: 30px;
@@ -388,17 +501,20 @@ article, aside, footer, header, nav, section {
   .flag_form {
     margin-top: 30px;
   }
-  .flag_form_text {
+  .form_text {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
     display: block;
     margin-bottom: 15px;
   }
-  .flag_form_button {
+  .form_button {
     margin-left: auto;
     margin-right: auto;
     display: block;
+  }
+  .panels {
+    margin-top: 30px;
   }
 }
 
@@ -410,6 +526,9 @@ article, aside, footer, header, nav, section {
     width: 48%;
     float: left;
     margin: 5px;
+  }
+  .panels {
+    margin-left: 4px;
   }
 }
 
@@ -427,6 +546,11 @@ article, aside, footer, header, nav, section {
   .challenge {
     width: 18%;
     float: left;
+  }
+  .panel {
+    width: 9%;
+    float: left;
+    padding: 14px 7px;
   }
   .flag_form {
     width: 80%;

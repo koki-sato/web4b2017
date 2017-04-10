@@ -1,0 +1,7 @@
+.title
+  h1 Which is the correct number?
+.panels
+  - (PANEL_MIN_ID..PANEL_MAX_ID).each do |i|
+    button.challenge.panel
+      a[href="/panels/#{i}"]
+        h3 #{i}

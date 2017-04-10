@@ -3,12 +3,23 @@ flags:
   flag2: web4b{1s_1t_too_3asy?}
   flag3: web4b{D0nt_f0rget_rob0ts}
   flag4: web4b{Read_c@refu11y}
-  flag5: web4b{Wh@t_ar3_u_l00king_for}
+  flag5: web4b{Wh@t_ar3_yu_l00king_for?}
+  flag6: web4b{y0u_ar3_n1ce_ch3ater}
+  flag7: web4b{Manually?Aut0mate_1t!}
+  flag8: web4b{Can_y0u_r3c1eve_r3quests?}
+  flag9: web4b{neVer_eVer_eVer_tru$t_us3r_inPut}
+  flag10: web4b{php_can_compare_anything}
 messages:
   success: Congratulations!
-  wrong: Woops... Your flag is wrong.
-  admin: Only admin can access this page!
-  browser: This page can only be accessed from a specific browser "web4b browser"
+  wrong: Woops... Your flag is wrong :(
+  only_admin: Only admin can access this page!
+  browser_check: This page can only be accessed from a specific browser "web4b browser"
+  incorrect_number: Incorrect number ...
+  send_ok: Send you FLAG!
+  invalid_url: Your URL is invalid.
+  win: You win!
+  draw: This game is draw.
+  lose: You lose ...
   not_found: The page you are looking for is not found.
-  error: 500 Internal Server Error
+  server_error: 500 Internal Server Error
 user_agent: web4b browser

@@ -15,7 +15,15 @@
     - else
       .challenge.unsolved
         h3 Flag #{i}
+  - if half_complete?
+    - (6..10).each do |i|
+      - if session[:"flag#{i}"]
+        .challenge.solved
+          h3 Flag #{i}
+      - else
+        .challenge.unsolved
+          h3 Flag #{i}
 .flag_form
   form[accepted-charset="UTF-8" action="/" method="post"]
-    input[class="flag_form_text" name="flag" placeholder='FLAG' type="text"]
-    input[class="flag_form_button" type="submit" value='submit']
+    input[class="form_text" name="flag" placeholder='FLAG' type="text"]
+    input[class="form_button" type="submit" value='submit']

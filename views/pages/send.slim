@@ -1,0 +1,13 @@
+- if request.post?
+  - if success
+    .alert.alert-success
+      = message
+  - else
+    .alert.alert-danger
+      = message
+.title
+  h1 Send FLAG to your web server
+.flag_form
+  form[accepted-charset="UTF-8" action="/send" method="post"]
+    input[class="form_text" name="url" placeholder='Input URL' type="text"]
+    input[class="form_button" type="submit" value='Send']

@@ -2,8 +2,9 @@ doctype html
 html
   head
     meta[charset="UTF-8"]
-    title Web for beginners
+    title Web for Beginners
     link[href="/stylesheets/application.css" media="all" rel="stylesheet"]
+    script[src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"]
   body
     header.header
       .header_inner
@@ -13,7 +14,7 @@ html
               img[alt="Web for beginners" src="/images/logo.png"]
         ul.header_links
           li.header_link
-            a[href="./admin"] Admin
+            a[href="/admin"] Admin
           /! <li class="header_link"><a href="./flag">Flag</a></li>
     main.main
       .main_inner
@@ -22,4 +23,16 @@ html
       .footer_inner
         .footer_copyright
           | © #{Time.now.year} Koki Sato All Rights Reserved.
+        - if half_complete?
+          ul.footer_links
+            li.footer_link
+              a[href="/game"] Game
+            li.footer_link
+              a[href="/panels"] Panels
+            li.footer_link
+              a[href="/send"] Send-Flag
+            li.footer_link
+              a[href="/cookie"] Cookie-Monster
+            li.footer_link
+              a[href="/mighty"] Mighty-PHP
     script[src="/javascripts/hide.js"]
