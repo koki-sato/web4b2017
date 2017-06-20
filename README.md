@@ -16,3 +16,13 @@ rake setup
 # Run web server on localhost:9292
 rake server
 ```
+
+## Docker ver
+
+```bash
+# Setup
+rake docker:setup
+
+# Run web server
+rake docker:run
+```

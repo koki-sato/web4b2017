@@ -10,3 +10,15 @@ desc 'Launch dynamic development server'
 task :server do
   sh 'bundle', 'exec', 'rackup'
 end
+
+namespace :docker do
+  desc 'Build Docker image from the Dockerfile'
+  task :build do
+    sh 'docker', 'build', '-t', 'web4b2017', '.'
+  end
+
+  desc 'Run in Docker container'
+  task :run do
+    sh 'docker', 'run', '-it', '--rm', '-p', '80:4567', 'web4b2017'
+  end
+end
